@@ -1,0 +1,54 @@
+html {
+  overflow-y: scroll;
+  background: none;
+  background-color: black;
+  background-color: #7f231f;
+  background-image: linear-gradient(left, #ce3c36 0%, #561815 100%);
+  background-image: -webkit-linear-gradient(left, #ce3c36 0%, #561815 100%);
+  background-image: -moz-linear-gradient(left, #ce3c36 0%, #561815 100%);
+  background-image: -o-linear-gradient(left, #ce3c36 0%, #561815 100%);
+  background-image: -ms-linear-gradient(left, #ce3c36 0%, #561815 100%);
+}
+
+#header {
+  text-align:center;
+}
+
+#search_box {
+  height:8px;
+  margin:10px;
+}
+
+#header, #content {
+  border: solid 1px #7f231f;
+  color: #ce3c36;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding:10px;
+  background-color: #561816;
+  border-radius:20px;
+}
+
+.grey-box {
+  padding: 10px;
+  background-color: #1a1716;
+  border: solid 1px #7f231f;
+  border-radius: 10px;
+  text-rendering: optimizeLegibility;
+  background-image: linear-gradient(top, #362f2d 0%, #1a1716 100%);
+  background-image: -webkit-linear-gradient(top, #362f2d 0%, #1a1716 100%);
+  color: white;
+}
+
+#form {
+  margin:auto;
+  text-align:center;
+}
+
+#result_box {
+  line-height:125%;
+  font-size:80%;
+  margin:auto;
+  margin-top:20px;
+}
