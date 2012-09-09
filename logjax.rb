@@ -22,7 +22,7 @@ end
 get '/match/:pattern' do
   content_type 'text/plain'
   begin
-    settings.log.grep(/#{CGI.unescape(params[:pattern])}/).take(40).join('<br/>')
+    settings.log.grep(/#{CGI.unescape(params[:pattern])}/).last(40).join('<br/>')
   rescue RegexpError, ArgumentError => ex
     "Regex Fail"
   end
