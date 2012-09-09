@@ -1,6 +1,8 @@
 $ ->
   ($ '#header').hide().fadeIn()
   ($ '#content').hide().fadeIn()
-  box = ($ '#search_box')
-  box.keyup ->
-    ($ '#result_box').load '/match/' + escape box.val() if box.val().length > 0
+  search_box = ($ '#search_box')
+  result = ($ '#result_box')
+  result.load '/match/' + escape '.*'
+  search_box.keyup ->
+    result.load '/match/' + escape search_box.val()
